@@ -30,9 +30,23 @@ action:
 3: Reducers update the state
 
 State changes are handle by **pure functions** and these functions are called reducers.
+In Redux Reducer is just a function that accepts the **current state** and _action_,and it returns a new state.
 
 What is a Pure Function?
 <https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976>
+
+## Redux has uni-directional data flow:
+
+- Data flows down
+- Actions flows up
+
+```
+→ Action
+|   ↓
+| Store <-> Reducers
+|   ↓
+← React  (Note: React components connected to store using redux related lib called React-redux)
+```
 
 ---
 
