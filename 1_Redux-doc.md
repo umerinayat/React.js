@@ -1,6 +1,6 @@
 # React State Management Using Redux ( Setting up redux flow )
 
-# Initial Redux Setup Steps
+## Initial Redux Setup Steps
 
 1. Create action
 2. Create reducer
