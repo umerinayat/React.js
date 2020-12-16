@@ -18,9 +18,26 @@
 7. Pass props via connect
 8. Dispatch action
 
-## Add more featuers to redux after intital setup involve 4 steps:
+## Adding more featuers to redux after intital setup involve 4 steps:
 
 1. Create Action
 2. Enhance reducer
 3. Connect component
 4. Dispatch action
+
+# Using redux in react components:
+
+```javascript
+import React from "react";
+class TasksPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      task: {
+        title: "",
+      },
+    };
+  }
+}
+```
