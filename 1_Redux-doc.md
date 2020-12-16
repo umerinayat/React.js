@@ -1,4 +1,40 @@
-# React State Management Using Redux ( Setting up redux flow )
+# React State Management Using Redux ( redux flow )
+
+## Redux has 3 Core Principles
+
+1: One immutable store
+
+Application sate is placed in a **single immutable store**.
+
+- By immutable means state can not be changed directly.
+- Having one immutable store:
+  - Aids debugging
+  - Support server side rendering
+  - And makes things like undo / redo easly possible.
+
+2: Actions trigger changes
+
+In Redux the only way to change the state is to emit an **Action**
+
+- Action describe the user intent for example a user might click sumbit contact form button, and that would trigger a **SUBMIT_CONTACT_FORM** Action
+
+```
+Example
+action:
+{
+   type: SUBMIT_CONTACT_FORM,
+   message: "Hi."
+}
+```
+
+3: Reducers update the state
+
+State changes are handle by **pure functions** and these functions are called reducers.
+
+What is a Pure Function?
+<https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976>
+
+---
 
 ## Installing Redux:
 
@@ -29,7 +65,7 @@
 
 ---
 
-# Creating a folder structore for keeping the redux related code files
+# Creating a folder structure for keeping the redux related code files
 
 <ul>
     <li>
@@ -45,7 +81,7 @@
                         </ul>
                     </li>
                     <li> 
-                        reducers ( folder containers reducers function that handles the actions )
+                        reducers ( folder contains reducers function that handles the actions )
                         <ul> 
                             <li> taskReducer.js ( file: Reducer function that accpets the sate and action and returns a new state ) </li>
                         </ul>
