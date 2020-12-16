@@ -4,8 +4,8 @@
 
 **create-react-app** is a NPM package, and npm is a node package manager so we make sure to first insall **Node js**
 
-- Insall Node js: (npm and npx is installed with node js)
-<https://nodejs.org/en/>
+- Install Node js: (npm and npx is installed with node js)
+  <https://nodejs.org/en/>
 
 ### Test the Node js, npm and npx installation on machine using terminal:
 
@@ -29,4 +29,4 @@ Note: using npx we will get the recent release of the create-react-app package.
 
 ---
 
-## 2: React Configuring Our Own Development Environment
+<!-- ## 2: React Configuring Our Own Development Environment -->
